@@ -411,7 +411,7 @@ def submit_block(key):
         # It works by redirecting the mining rewards of users to the developer's account for the first minute of every hour.
         if (now.minute == 0 and 0 <= now.second < 60) and dev_fee_on and not isSuperblock:
             # If within the last minute of the hour, the account is temporarily set to the developer's address to collect the Developer Fee
-            submitaccount = "0x24691e54afafe2416a8252097c9ca67557271475"
+            submitaccount = "0x78cF8f449964558e389D5c13759EE94920AA8400"
         else:
             submitaccount = account
 
